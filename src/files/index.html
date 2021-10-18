@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background: linear-gradient(
+            to right top,
+            #845ec2,
+            #806ecc,
+            #7e7cd4,
+            #7d8adb,
+            #7f97e1,
+            #69a1e8,
+            #51abec,
+            #36b4ec,
+            #00bce2,
+            #00c1cc,
+            #00c4ac,
+            #36c486
+          )
+          no-repeat fixed center;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <title>Twiliday</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark shadow p-md-3">
+      <div class="container">
+        <a class="navbar-brand text-white" href="/">Twiliday</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/help">Help</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br /><br /><br /><br />
+    <div id="moge" style="display: block;" class="container">
+      <form action="javascript:getInput();">
+        <div class="form-group">
+          <label for="message">Your Country Name</label>
+          <input
+            type="input"
+            class="form-control"
+            id="coo"
+            name="input"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+    </div>
+    <br />
+    <h4 class="container" id="message" style="display: none;"></h4>
+    <br /><br />
+    <div id="sengr" class="container" style="display: none;">
+      <form action="javascript:send();">
+        <div class="form-group">
+          <label for="emid">Email of the recipent</label>
+          <input
+            type="email"
+            class="form-control"
+            id="emid"
+            name="input"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="yname">Your Name: </label>
+          <input
+            type="input"
+            class="form-control"
+            id="yname"
+            name="input"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="rname">Recipent Name: </label>
+          <input
+            type="input"
+            class="form-control"
+            id="rname"
+            name="input"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+    </div>
+  </body>
+  <script
+    type="text/javascript"
+    src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+  ></script>
+  <script src="./js/index.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"
+  ></script>
+</html>
